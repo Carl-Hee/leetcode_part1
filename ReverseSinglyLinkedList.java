@@ -8,7 +8,7 @@ class Solution {
     while ( pivot !=null && pivot.next !=null ) {
       tmp = pivot.next;
       pivot.next = pivot.next.next;
-      tmp.next = pivot;
+      tmp.next = head;
       head = tmp;
     }
     return head; 
